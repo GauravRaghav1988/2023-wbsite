@@ -86,6 +86,7 @@
         {% comment %} <li class="nav-item">
             <a class="nav-link" href="/login/">Login</a>
         </li> {% endcomment %}
+      
         <li class="nav-item">
             <a class="nav-link" href="/registration/">Registration</a>
         </li>
@@ -108,12 +109,7 @@
 
 
 
-                    {% comment %} <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li> {% endcomment %}
-                    {% comment %} <li class="nav-item">
-                        <a class="- btn btn-primary rounded ml-4" href='{{user.first_name | upper}}'> {{user.first_name | upper}} </a> {% endcomment %}
-                  
+                 
 
                           
                     </li> 
@@ -133,9 +129,22 @@
                 
                 <div class="buttons pt-3">
                   {% comment %} <button class="btn btn-primary rounded" href='/login/'>Login</button> {% endcomment %}
+                  {% if user.is_authenticated %} 
+                <br>
+            
+                {% comment %} <p>Welcome</p> {% endcomment %}
+                  <h6 class="subtitle" style="font-size: 38px; color: #ff6600; font-family: cursive; font-weight: bold; text-align: left;"> Welcome {{request.user.username | title}} </h6>
+
+
+                        {% comment %} <h6 class="subtitle">Ohh Welcome</h6>
+                        <h6 class="title">Dear  {{request.user.username | upper}}</h6> {% endcomment %}
+                        {% comment %} <p class="new">Software Professional</p>  {% endcomment %}
+                    
+                  {% else %}
                   <a class="btn btn-primary rounded" href='/login/'>Login</a>
                   <a href='/registration/' class="btn btn-dark rounded">Register Here</a>
 
+                    {%endif%}
                     {% comment %} <button class="btn btn-dark rounded">Register Here</button> {% endcomment %}
                 </div>     
                 
@@ -169,7 +178,7 @@
         <div class="container mt-5">
             <div class="row text-center text-md-left">
                 <div class="col-md-3">
-                    <img src="{% static 'assets/imgs/bg_2.png' %}" alt="" class="img-thumbnail mb-4">
+                    <img src="{% static 'assets/imgs/bg_1.png' %}" alt="" class="img-thumbnail mb-4">
                 </div>
                 <div class="pl-md-4 col-md-9">
                     <h4 class="title">Gaurav Raghav</h4>
@@ -191,7 +200,11 @@
                       With a solid year of experience in DevOps, I possess a deep understanding of deployment and infrastructure management, further enhancing my skill set.
                       <b></b>
                       I'm enthusiastic about connecting and exploring potential collaboration opportunities. Let's discuss how we can work together to drive success.</p>
-                    <button class="btn btn-primary rounded mt-3">DOWNLOAD CV</button>                   
+                    {% comment %} <button class="btn btn-primary rounded mt-3">DOWNLOAD CV</button>      {% endcomment %}
+                    <a href="path_to_your_pdf_file.pdf" download="GAURAV RAGHAV PYTHON DEVELOPER RESUME.pdf">
+                        <button class="btn btn-primary rounded mt-3">DOWNLOAD CV</button>
+                      </a>
+                                    
                 </div>
             </div>
         </div>
@@ -248,7 +261,7 @@
         <div class="container text-center">
             <h6 class="subtitle">Skills</h6>
             {% comment %} <h6 class="section-title mb-4">What Skills Do I have?</h6> {% endcomment %}
-            <p class="mb-5 pb-4">Over 8 Years of overall experinces helped me to gain expertise in following Domains</p>
+            <p class="mb-5 pb-4">Over 8 Years of overall experiences helped me to gain expertise in the following Domains</p>
 
             <div class="row text-left">
                 <div class="col-sm-6">

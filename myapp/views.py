@@ -59,7 +59,7 @@ def change_password(request):
             user = form.save()
             update_session_auth_hash(request, user)  # Update the session with the user's new password
             messages.success(request, 'Password Changed successfully !!')
-            return redirect('login')  # Redirect to home page or any other page after password change
+            return redirect('/login/')  # Redirect to home page or any other page after password change
     else:
         form = PasswordChangeForm(request.user)
     
