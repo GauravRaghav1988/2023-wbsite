@@ -20,8 +20,9 @@ def register(request):
             fm = SignUpForm(request.POST)
             if fm.is_valid():
              messages.success(request, 'Account Created Successfully !!') 
+            #  messages.add_message(request,messages.SUCCESS, "Your Account has been created! ")
              fm.save()
-             return HttpResponseRedirect('/')
+            #  return HttpResponseRedirect('/')
      else: 
       fm = SignUpForm()
      return render(request,'registration.html', {'form':fm})

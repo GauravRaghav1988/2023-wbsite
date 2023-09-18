@@ -95,8 +95,14 @@
                   {% for fm in form %}
                   {{fm.label_tag}} {{fm}} {{fm.errors|striptags}} <br><br>
                   {% endfor %}
-                  <input type="submit" value="Login">
+                  
+                  <input type="submit" value="Register">
                   </form>
+                  {% if messages %}
+                    {% for message in messages %}
+                     {{message}}
+                    {% endfor %}
+                  {% endif %}
                   <br>
                   <br>
                   
@@ -110,7 +116,7 @@
          
          
          {% if user.is_authenticated %}
-         <h5><a href='/account/'
+         <h5><a href='/'
          class="nav-link"><span>Click to Account Page</span></a></h5>
          <h5>OR</h5>
          <h5><a href='/logout/'
