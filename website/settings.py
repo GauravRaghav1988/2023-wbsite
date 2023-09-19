@@ -51,6 +51,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_session_timeout.middleware.SessionTimeoutMiddleware',
+    'django_auto_logout.middleware.auto_logout',
 ]
 
 ROOT_URLCONF = 'website.urls'
@@ -127,3 +129,20 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+
+#auto logout
+
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/' 
+
+from datetime import timedelta
+AUTO_LOGOUT = {
+    'IDLE_TIME': timedelta(seconds=300),
+    'SESSION_TIME': 600,     #in seconds 10 min *60 sec = 600
+    'REDIRECT_TO_LOGIN_IMMEDIATELY': True,
+    
+    'MESSAGE': 'Your last session has expired.',
+    'SESSION_TIMEOUT_REDIRECT' : '/login/',
+    
+}
