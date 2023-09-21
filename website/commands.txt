@@ -1,0 +1,7 @@
+ virtualenv virenv    
+ venv\Scripts\activate 
+ pip freeze > requirements.txt    
+ git add .
+ git commit -m "auto logout and idle timeout added"
+ git push -u origin main (to push it to branch main )
+ git remote add origin https://github.com/GauravRaghav1988/himaniwebsitesep23.git

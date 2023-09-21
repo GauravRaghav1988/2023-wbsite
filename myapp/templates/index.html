@@ -3,22 +3,14 @@
 <html lang="en">
 <head>
      <style>
-        #timer{
-            font-size: 15px;
-            text-align:left;   
-            margin-right: 25px; 
-            font-weight:700;  
-            background-color:darkblue;  
-            color: beige;    
-         
-        }
+      
       </style> 
+      
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with Steller landing page.">
     <meta name="author" content="Devcrud">
     <title>GAURAV RAGHAV</title>
-    
     <!-- font icons -->
     <link rel="stylesheet" href="{% static 'assets/vendors/themify-icons/css/themify-icons.css' %}">
     <!-- Bootstrap + Steller main styles -->
@@ -84,6 +76,11 @@
                             <a class="nav-link" href="/logout/"><strong>Logout</strong></a>
                         </li>
 
+                        <li class="nav-item">
+                            <a class="nav-link" href="/quiz/"><strong>Play Quiz</strong></a>
+                        </li>
+
+
                         {% comment %} <li class="nav-item">
                             <a class="nav-link" href=""><div id="countdown"></div></a>
                         </li>  {% endcomment %}
@@ -122,6 +119,10 @@
         {% comment %} <li class="nav-item">
             <a class="nav-link" href="/">Logout</a>
         </li> {% endcomment %}
+        <li class="nav-item">
+            <a class="nav-link" href="/quiz/"><strong>Play Quiz</strong></a>
+        </li>
+
         <li class="nav-item"><a href='/login/'
             class="- btn btn-primary rounded ml-4"><span><strong>Login Required !</strong></span></a></li>
       
@@ -170,7 +171,7 @@
                     {% comment %} <button class="btn btn-dark rounded">Register Here</button> {% endcomment %}
                 </div>     
                
- <br>
+             <br>
                 <div class="socials mt-4">
                     {% comment %} <a class="social-item" href="{% static 'javascript:void(0)' %}"><i class="ti-facebook"></i></a> {% endcomment %}
                     {% comment %} <a class="social-item" href="{% static 'javascript:void(0)' %}"><i class="ti-google"></i></a> {% endcomment %}
@@ -321,7 +322,7 @@
        <section id="portfolio" class="section">
         <div class="container text-center">
             <h6 class="subtitle">Portfolio</h6>
-            <h6 class="section-title mb-4">Check My Wonderful Works</h6>
+            <h6 class="section-title mb-4">Some Images of my work</h6>
             <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
 
             <div class="row">
@@ -559,8 +560,6 @@
     <!-- steller js -->
     <script src="{% static 'assets/js/steller.js' %}"></script>
 
-
-  <!--logout timer -->
       
   
  <script src="script.js"></script>
