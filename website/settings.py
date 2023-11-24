@@ -12,8 +12,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
-'''for .env using decouple'''
-from decouple import config
+# '''for .env using decouple'''
+# from decouple import config
 
 
 import os
@@ -28,10 +28,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = 'django-insecure-8*97zbfrek!i3sxjue7@y*wlk0)c4vpd6=5xe*u^0p99yo_ku7'
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = 'django-insecure-8*97zbfrek!i3sxjue7@y*wlk0)c4vpd6=5xe*u^0p99yo_ku7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG')
+DEBUG = 'True'
 
 ALLOWED_HOSTS = []
 

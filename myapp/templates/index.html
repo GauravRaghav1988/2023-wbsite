@@ -124,7 +124,7 @@
         </li>
 
         <li class="nav-item"><a href='/login/'
-            class="- btn btn-primary rounded ml-4"><span><strong>Login Required !</strong></span></a></li>
+            class="- btn btn-primary rounded ml-4" style="background-color: black; border-width:thick;"><span><strong>Login Required !</strong></span></a></li>
       
            
       {% endif %}           
@@ -138,12 +138,12 @@
     <!-- End of page navibation -->
 
     <!-- Page Header -->
-    <header class="header" id="home">
+    <header class="header" style ="background-color:cadetblue ;" ,id="home"> 
         <div class="container">
             <div class="infos">
-                <h6 class="subtitle">Hello,I'm</h6>
-                <h6 class="title">GAURAV RAGHAV</h6>
-                <p class="new">Software Professional</p> 
+                <h6 class="subtitle" style="color: white ; font:bold;">Hello,I'm</h6>
+                <h6 class="title" style="color: darkblue;">GAURAV RAGHAV</h6>
+                <p class="new" >Software Professional</p> 
                 
                 <div class="buttons pt-3">
                   {% comment %} <button class="btn btn-primary rounded" href='/login/'>Login</button> {% endcomment %}
@@ -159,7 +159,7 @@
                         {% comment %} <p class="new">Software Professional</p>  {% endcomment %}
                     
                   {% else %}
-                  <a class="btn btn-primary rounded" href='/login/'>Login</a>
+                  <a class="btn btn-primary rounded" style="color: white; background-color:blue;"  href='/login/'>Login</a>
                   <a href='/registration/' class="btn btn-dark rounded">Register Here</a>
                     {%endif%}
 
@@ -180,7 +180,7 @@
                 </div>
                 {% comment %} "https://exampleURL.com/" {% endcomment %}
             </div>              
-            <div class="img-holder">
+            <div class="img-holder" style="height: auto; width: 100%;">
                 <img src="{% static 'assets/imgs/bg_1.png' %}" alt="">
             </div>      
         </div>  
@@ -197,7 +197,7 @@
     <!-- End of Page Header -->
     
     <!-- About section -->
-    <section id="about" class="section mt-3">
+    <section id="about" class="section mt-0" style="background-color:black " >
         <div class="container mt-5">
             <div class="row text-center text-md-left">
                 <div class="col-md-3">

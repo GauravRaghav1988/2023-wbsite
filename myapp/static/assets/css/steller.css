@@ -61,13 +61,13 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  /* font-family:initial; */
   font-size: 1rem;
   font-weight: 800;
-  line-height: 1.5;
-  color: #495057;
+  line-height: ;
+  color:white;
   text-align: left;
-  background-color: #fff;
+  background-color:black;
 }
 
 [tabindex="-1"]:focus {
@@ -2727,14 +2727,14 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #495057;
+  color: #0578ea;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background-color: transparent;
+  background-color: black;
   border: 1px solid transparent;
   padding: 0.65rem 0.9rem;
   font-size: 1rem;
@@ -2752,7 +2752,7 @@ textarea.form-control {
 }
 
 .btn:hover {
-  color: #495057;
+  color:white;
   text-decoration: none;
 }
 
@@ -11033,8 +11033,8 @@ pre {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 2px solid #ff7a57;
-  color: #ff7a57;
+  border: 2px solid #000;
+  color: blue;
   text-align: center;
   line-height: 40px;
   -webkit-transition: all 0.3s;
@@ -11044,7 +11044,7 @@ pre {
 
 .socials .social-item:hover {
   background: #ff7a57;
-  color: #fff;
+  color: black;
 }
 
 .btn {
@@ -11568,9 +11568,10 @@ pre {
   padding: 20px 0;
   margin-top: -50px;
   z-index: 999;
-  background:#cbf4f6;
+  background:cadetblue;
   font-style: oblique;
   font: 600;
+  color:white;
   box-shadow: 0 0 30px rgba(173, 181, 189, 0.4);
 }
 
