@@ -14,6 +14,7 @@ urlpatterns = [
     path('logout/',views.logoutuser),   
     path('quiz/',views.quiz_home,name='quiz_home'),
     path('add_question/',views.addQuestion,name='addQuestion'),
+    # path('blog/',views.blog,name='blog'),
  
 ]
 

@@ -45,7 +45,7 @@ def user_login(request):
                 user = authenticate(username=uname, password=upass)
                 if user is not None:
                     login(request, user)
-                    messages.success(request, 'Logged in successfully !!')
+                    messages.success(request, 'You have Logged in successfully !!')
                     return HttpResponseRedirect('/')
         else: 
          fm = AuthenticationForm()
@@ -170,3 +170,8 @@ def loginPage(request):
 def logoutPage(request):
     logout(request)
     return redirect('/')
+
+
+
+# def blog(request):
+#     return render(request, 'blog.html')
