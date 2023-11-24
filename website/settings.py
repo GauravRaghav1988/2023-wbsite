@@ -12,13 +12,11 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
-<<<<<<< HEAD
-=======
-'''for .env using decouple'''
-from decouple import config
+
+# from decouple import config
 
 
->>>>>>> 1bd18c0a (first commit after having .env file and git ignore)
+# >>>>>>> 1bd18c0a (first commit after having .env file and git ignore)
 import os
 
 
@@ -30,18 +28,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-<<<<<<< HEAD
+
 SECRET_KEY = 'django-insecure-8*97zbfrek!i3sxjue7@y*wlk0)c4vpd6=5xe*u^0p99yo_ku7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-=======
+
 # SECRET_KEY = 'django-insecure-8*97zbfrek!i3sxjue7@y*wlk0)c4vpd6=5xe*u^0p99yo_ku7'
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = 'django-insecure-8*97zbfrek!i3sxjue7@y*wlk0)c4vpd6=5xe*u^0p99yo_ku7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG')
->>>>>>> 1bd18c0a (first commit after having .env file and git ignore)
+DEBUG = 'True'
+# >>>>>>> 1bd18c0a (first commit after having .env file and git ignore)
 
 ALLOWED_HOSTS = []
 
@@ -104,8 +102,7 @@ DATABASES = {
     }
 }
 
-<<<<<<< HEAD
-=======
+
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
@@ -113,7 +110,6 @@ DATABASES = {
 #     }
 # }
 
->>>>>>> 1bd18c0a (first commit after having .env file and git ignore)
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
