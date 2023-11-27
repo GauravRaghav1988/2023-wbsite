@@ -11,5 +11,13 @@ class QuesModel(models.Model):
     
     def __str__(self):
         return self.question
-    
 
+
+class BlogPost(models.Model):
+    name = models.CharField(max_length=255)
+    post_number = models.AutoField(primary_key=True)
+    user_name = models.CharField(max_length=255, default="Gaurav Raghav")
+    content = models.TextField()
+
+    def __str__(self):
+        return f'{self.post_number}: {self.name} by {self.user_name}'
